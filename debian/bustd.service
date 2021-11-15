@@ -1,0 +1,9 @@
+[Unit]
+Description=Bustd OOM Daemon
+
+[Service]
+ExecStart=/usr/bin/bustd --no-daemon
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -28,7 +28,3 @@ procfs = "0.9.1"
 [features]
 glob-ignore = ["glob"]
 
-[profile.release]
-lto = true
-codegen-units = 1
-opt-level = 3

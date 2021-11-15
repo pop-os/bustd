@@ -1,0 +1,17 @@
+Source: bustd
+Section: utils
+Priority: optional
+Maintainer: Michael Aaron Murphy <mmstick@pm.me>
+Build-Depends:
+    cargo,
+    debhelper-compat (=10),
+    rustc (>=1.53),
+Standards-Version: 4.1.1
+Homepage: https://github.com/vrmiguel/bustd
+
+Package: bustd
+Architecture: amd64 arm64
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Process killer daemon for out-of-memory scenarios
+ Written in Rust, uses little CPU and memory, and determines
+ OOM based on the kernel's Press Stall Information API.
